@@ -5,7 +5,9 @@ const App = () => {
   return (
     <div className="center">
       <div className="card">
-        <ComboBox />
+        <ComboBox
+            options={["Apple", "Banana", "Mango", "Watermelon", "Orange"]}
+            onSelect={(selected) => console.log(selected)}/>
       </div>
     </div>
   );
