@@ -8,3 +8,64 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+
+
+#search {
+  width: 100%;
+  padding: 1em;
+  border-radius: 20px;
+  border: 1px solid #222;
+  font-size: x-large;
+}
+
+/* Container for combo box */
+.combo-box {
+  position: relative;
+  width: 300px;
+}
+
+/* Input box */
+.combo-box-input {
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+/* Style when input is focused */
+.combo-box-input:focus {
+  border-color: #4a90e2;
+}
+
+/* Dropdown options container */
+.combo-box-options {
+  position: absolute;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-top: none;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+/* Each option in the dropdown */
+.combo-box-option {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+/* Hover and highlighted option styles */
+.combo-box-option:hover,
+.combo-box-option.highlighted {
+  background-color: #f0f0f0;
+}
+
+/* No results message */
+.combo-box-no-results {
+  padding: 8px 12px;
+  color: #999;
+}
